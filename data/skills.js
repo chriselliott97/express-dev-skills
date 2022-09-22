@@ -4,7 +4,7 @@ const skills = [
   {text: 'Creative', obtain: true},
   {text: 'JavaScript', obtain: true},
   {text: 'CSS', obtain: true},
-  {text: 'HTML', obtain: true}
+  {text: 'HTML', obtain: false}
 ]
 
 export {
