@@ -9,7 +9,7 @@ const skillSchema = new Schema ({
 })
 
 
-const Skill = mongoose.model('Todo', skillSchema)
+const Skill = mongoose.model('Skill', skillSchema)
 
 export {
   Skill

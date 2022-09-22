@@ -7,8 +7,10 @@ const router = Router()
 
 // GET
 router.get('/', skillsCtrl.index)
-// NEW
+// GET -- NEW
 router.get('/new', skillsCtrl.new)
+// GET
+router.get('/:id', skillsCtrl.show)
 // POST NEWLY CREATED SKILL
 router.post('/', skillsCtrl.create)
 
