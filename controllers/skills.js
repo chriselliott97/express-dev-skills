@@ -17,8 +17,21 @@ function newSkill(req, res) {
   res.render('skills/new')
 }
 
+function create(req, res) {
+  console.log(req.body, "requiresvasv")
+  Skill.create(req.body)
+  .then(skill => {
+    res.redirect('/skills')
+  })
+  .catch(error => {
+    console.log(error)
+    res.redirect('/')
+  })  
+}
+
 export {
   index,
   newSkill as new,
+  create,
 }
 
