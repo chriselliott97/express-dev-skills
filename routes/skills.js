@@ -1,16 +1,14 @@
 import { Router } from 'express'
-import { skills } from '../data/skills.js'
+import * as todosCtrl from '../controllers/skills.js'
 
 const router = Router()
 
 /* GET users listing. */
 
-
-router.get('/', function(req, res) {
-  res.render('skills/index', {
-    skills: skills
-  })
-})
+// GET
+router.get('/', todosCtrl.index)
+// NEW
+router.get('/new', todosCtrl.new)
 
 export {
   router

@@ -9,8 +9,8 @@ const skillSchema = new Schema ({
 })
 
 
-const Todo = mongoose.model('Todo', todoSchema)
+const Skill = mongoose.model('Todo', skillSchema)
 
 export {
-  Todo
+  Skill
 }
