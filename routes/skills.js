@@ -13,7 +13,8 @@ router.get('/new', skillsCtrl.new)
 router.get('/:id', skillsCtrl.show)
 // POST NEWLY CREATED SKILL
 router.post('/', skillsCtrl.create)
-
+// DELETE
+router.delete('/:id', skillsCtrl.delete)
 
 export {
   router
